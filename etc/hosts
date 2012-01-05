@@ -19,6 +19,7 @@
 199.59.148.139 userstream.twitter.com
 199.59.149.243 ssl.twitter.com
 199.59.149.243 status.twitter.com
+199.59.149.243 fly.twitter.com
 199.59.149.243 assets0.twitter.com
 199.59.149.243 assets1.twitter.com
 199.59.149.243 assets2.twitter.com
@@ -75,7 +76,7 @@
 # 5/7 v*.lscache*.l.google.com IP 地址变更（youtube 视频储存服务器除外，谁有日本 yt 的 IP 告诉我- -），由日本东京改为澳洲悉尼，速度我测试变快了
 # 5/10 更新 v*.lscache*.c.google.com 感谢 JL Hwung 的提供
 # 7/12 《电脑报》你威武！（2010年7月12日G14版第四列）
-# 您正在查看的版本更新于 2011-10-25；详细更新日志请见 http://code.google.com/p/ipv6-hosts/source/list （RSS 链接）
+# 您正在查看的版本更新于 2011-11-29；详细更新日志请见 http://code.google.com/p/ipv6-hosts/source/list （RSS 链接）
 #顺便提供能够解析出 Google IPv6 地址的 DNS 服务器 (其 ISP 已加入 Google over IPv6 计划)，这样不需要修改 hosts，只需改变本机 DNS 设置就可以自动解析出 IPv6 地址，由HE提供：2001:470:20::2 ordns.he.net (ipv6) 74.82.42.42 (ipv4，在内地可能会遭污染，可以和本 hosts 文件配合使用 by www.lostriver.net)
 #最近好像有0.5不停的在举报本文有不适宜内容（滥用行为），然后接连收到10余封google发来的本文审核通过可以发表的邮件，建议大家备份一下本文，免得某些人把本文404，reset什么的之类- -
 #用文本编辑器打开hosts文件，将以下内容复制进去，保存即可（hosts 文件没有后缀）
@@ -359,6 +360,7 @@
 #Checkout 买家
 2404:6800:8005::73 checkout.google.com
 #2404:6800:8005::73 checkout.l.google.com
+2404:6800:8005::8b wallet.google.com
 
 #Chrome 谷歌浏览器
 2404:6800:8005::64 chrome.google.com
@@ -393,6 +395,8 @@
 2404:6800:8005::52 gmaps-samples-flash.googlecode.com
 2404:6800:8005::52 googleappengine.googlecode.com
 2404:6800:8005::52 google-code-feed-gadget.googlecode.com
+2404:6800:8005::52 www.googlesource.com
+2404:6800:8005::52 android.googlesource.com
 
 #Desktop 桌面
 2404:6800:8005::62 desktop.google.com
@@ -470,37 +474,37 @@
 
 #Gmail 邮箱
 2404:6800:8005::11 mail.google.com
-2404:6800:8005::53 googlemail.l.google.com
 2404:6800:8005::11 googlemail.l.google.com
-2404:6800:8005::12 googlemail.l.google.com
-2404:6800:8005::13 googlemail.l.google.com
 2404:6800:8005::bd chatenabled.mail.google.com #Gmail 中 Gtalk 聊天服务
 2404:6800:8005::bd filetransferenabled.mail.google.com #可能会造成 GTalk 客户端异常
 2404:6800:8005::bd b.googlemail.l.google.com
-2404:6800:8005::62 talk.gmail.com #Gmail中Gtalk聊天服务
+#2404:6800:8005::62 talk.gmail.com #Gmail中Gtalk聊天服务
 2404:6800:8005::64 gmail.google.com
 2404:6800:8005::11 www.gmail.com
-2404:6800:8005::13 gmail.com
+2404:6800:8005::11 gmail.com
 2404:6800:8005::11 m.gmail.com
 2404:6800:8005::11 m.googlemail.com
-2001:4860:8005::6d pop.gmail.com #Foxmail 等客户端不支持 ipv6 连接，参阅 Issue 33
-2001:4860:8005::6d gmail-pop.l.google.com
-2001:4860:8005::6d smtp.gmail.com #Foxmail 暂不支持
-2001:4860:8005::6d gmail-smtp-msa.l.google.com
+2001:4860:8004::6d pop.gmail.com #Foxmail 等客户端不支持 ipv6 连接，参阅 Issue 33
+2001:4860:8004::6d gmail-pop.l.google.com
+2001:4860:8004::10 pop.googlemail.com
+2001:4860:8004::10 googlemail-pop.l.google.com
+2001:4860:8004::6d smtp.gmail.com #Foxmail 暂不支持
+2001:4860:8004::6d gmail-smtp-msa.l.google.com
 2404:6800:8005::62 smtp1.google.com
-2404:6800:8005::62 smtp2.google.com
+#2404:6800:8005::62 smtp2.google.com
 2404:6800:8005::62 smtp3.google.com
 2404:6800:8005::62 smtp-out.google.com
 2404:6800:8005::62 smtp-out3.google.com
-2001:4860:8005::6d gmail-smtp.l.google.com
+2001:4860:8004::6d gmail-smtp.l.google.com
 2404:6800:8005::62 gmail-smtp-in.l.google.com
 2404:6800:8005::62 gmr-smtp-in.l.google.com
-2001:4860:8005::6d smtp.googlemail.com
-2001:4860:8005::6d googlemail-smtp.l.google.com
-2001:4860:8005::6d imap.gmail.com #Foxmail 暂不支持
-2001:4860:8005::6d imap.google.com
-2001:4860:8005::6d imap.googlemail.com
-2001:4860:8005::6d gmail-imap.l.google.com
+2001:4860:8004::10 smtp.googlemail.com
+2001:4860:8004::10 googlemail-smtp.l.google.com
+2001:4860:8005::6c imap.gmail.com #Foxmail 暂不支持
+2001:4860:8005::6c imap.google.com
+2001:4860:8005::6c gmail-imap.l.google.com
+2001:4860:8004::10 imap.googlemail.com
+2001:4860:8004::10 googlemail-imap.l.google.com
 
 #Group 论坛
 2404:6800:8005::8b groups.google.com
@@ -671,7 +675,8 @@
 
 #Pack 软件精选
 2404:6800:8005::68 pack.google.com
-2404:6800:8005::68 cache.pack.google.com
+2607:f8b0:4004:6::15 cache.pack.google.com
+2607:f8b0:4004:6::15 cache.l.pack.google.com
 2404:6800:8005::6a pack.google.cn
 
 #Photo/Picasa 照片/网络相册
@@ -2287,6 +2292,7 @@
 
 #GoogleUserContent 用户自定义的Google服务
 2404:6800:8005::84 www.googleusercontent.com
+2404:6800:8005::84 androidmarket.googleusercontent.com
 2404:6800:8005::84 blogger.googleusercontent.com
 2404:6800:8005::84 clients1.googleusercontent.com
 2404:6800:8005::84 clients2.googleusercontent.com
@@ -4049,6 +4055,8 @@
 2404:6800:8005::79 www.thegooglepuzzle.com
 2404:6800:8005::79 www.thegobridgeoglepuzzle.com
 2404:6800:8005::8a www.oneworldmanystories.com
+2404:6800:8005::79 www.googlezeitgeist.com
+2404:6800:8005::66 www.googleinsidesearch.com
 ###其他主流服务
 
 #bit.ly / j.mp
@@ -4305,15 +4313,15 @@
 2002:836b:9820::836b:9886 www.ipv6.microsoft.com
 
 #WikiMedia 维基媒体
-2620:0:860:2:21d:9ff:fe33:f235 static.wikipedia.org #Wikipedia Static HTML Dumps
-2620:0:860:2:21d:9ff:fe33:f235 hume.wikimedia.org #Wikipedia Static HTML Dumps
-2620:0:860:2:230:48ff:fe5a:eb1e download.wikimedia.org #Wikimedia Downloads
-2620:0:860:2:230:48ff:fe5a:eb1e download.wikipedia.org #Wikimedia Downloads
-2620:0:860:2:230:48ff:fe5a:eb1e dumps.wikimedia.org #Wikimedia Downloads
-2620:0:860:2:230:48ff:fe5a:eb1e storage2.wikimedia.org #Wikimedia Downloads
+#2620:0:860:2:21d:9ff:fe33:f235 static.wikipedia.org #Wikipedia Static HTML Dumps
+#2620:0:860:2:21d:9ff:fe33:f235 hume.wikimedia.org #Wikipedia Static HTML Dumps
+#2620:0:860:2:230:48ff:fe5a:eb1e download.wikimedia.org #Wikimedia Downloads
+#2620:0:860:2:230:48ff:fe5a:eb1e download.wikipedia.org #Wikimedia Downloads
+#2620:0:860:2:230:48ff:fe5a:eb1e dumps.wikimedia.org #Wikimedia Downloads
+#2620:0:860:2:230:48ff:fe5a:eb1e dataset2.wikimedia.org #Wikimedia Downloads
 2620:0:862:1::25:1 lists.wikimedia.org
-2620:0:862:1:209:3dff:fe10:d5d2 svn.wikimedia.org #Wikimedia Subversion
-2620:0:862:1:209:3dff:fe10:d5d2 mayflower.esams.wikimedia.org
+#2620:0:862:1:209:3dff:fe10:d5d2 svn.wikimedia.org #Wikimedia Subversion
+#2620:0:862:1:209:3dff:fe10:d5d2 mayflower.esams.wikimedia.org
 2620:0:862:1:6666:6666:6666:6666 ipv6and4.labs.wikimedia.org #Wikimedia IPv6 AAAA record testing
 
 #ARIN
@@ -4395,6 +4403,7 @@
 2404:6800:8005::62 kamonka.blogspot.com #NHK 纪录片精选
 2404:6800:8005::62 anonscanlations.blogspot.com
 2404:6800:8005::62 waihonhon.blogspot.com
+2404:6800:8005::62 twitterchinese.blogspot.com
 
 #Google Code 上的其他常用项目
 2404:6800:8005::52 ipv6-hosts.googlecode.com
@@ -4698,10 +4707,15 @@
 2001:778:0:ffff:64:0:5bc6:aee9 bits-geo.wikimedia.org
 2001:778:0:ffff:64:0:d050:9894 blog.wikimedia.org
 2001:778:0:ffff:64:0:5bc6:aee0 commons.wikimedia.org #维基共享资源
+2001:778:0:ffff:64:0:d050:98b9 dataset2.wikimedia.org
+2001:778:0:ffff:64:0:d050:98b9 download.wikimedia.org
+2001:778:0:ffff:64:0:d050:98b9 dumps.wikimedia.org
 2001:778:0:ffff:64:0:d050:98a2 en.planet.wikimedia.org
+2001:778:0:ffff:64:0:d050:9893 formey.wikimedia.org
 2001:778:0:ffff:64:0:d050:98a1 ganglia.wikimedia.org
 2001:778:0:ffff:64:0:5bc6:aee9 geoiplookup.wikimedia.org
 2001:778:0:ffff:64:0:d050:9894 hooper.wikimedia.org
+2620:0:860:2:21d:9ff:fe33:f235 hume.wikimedia.org
 2001:778:0:ffff:64:0:5bc6:aee0 incubator.wikimedia.org
 2001:778:0:ffff:64:0:d050:9885 mail.wikimedia.org
 2001:778:0:ffff:64:0:5bc6:aee0 meta.wikimedia.org #元维基
@@ -4709,6 +4723,8 @@
 2001:778:0:ffff:64:0:5bc6:aee0 species.wikimedia.org #维基物种
 2001:778:0:ffff:64:0:d050:98a1 spence.wikimedia.org
 2001:778:0:ffff:64:0:d050:98a2 singer.wikimedia.org
+2620:0:860:2:21d:9ff:fe33:f235 static.wikipedia.org
+2001:778:0:ffff:64:0:d050:9893 svn.wikimedia.org
 2001:778:0:ffff:64:0:5bc6:aeea upload.wikimedia.org
 2001:778:0:ffff:64:0:5bc6:aee0 www.wikimedia.org
 2001:778:0:ffff:64:0:d050:98d1 wikimediafoundation.org
@@ -4937,6 +4953,7 @@
 2001:778:0:ffff:64:0:5bc6:aee1 da.wikipedia.org
 2001:778:0:ffff:64:0:5bc6:aee1 de.wikipedia.org
 2001:778:0:ffff:64:0:5bc6:aee1 diq.wikipedia.org
+2001:778:0:ffff:64:0:d050:98b9 download.wikipedia.org
 2001:778:0:ffff:64:0:5bc6:aee1 dsb.wikipedia.org
 2001:778:0:ffff:64:0:5bc6:aee1 dv.wikipedia.org
 2001:778:0:ffff:64:0:5bc6:aee1 dz.wikipedia.org
